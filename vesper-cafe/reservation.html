@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation — Vesper Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="メインナビゲーション">
+    <a href="index.html" class="nav-logo">Vesper</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#menu">Menu</a></li>
+      <li><a href="index.html#access">Access</a></li>
+      <li><a href="reservation.html" class="nav-active">Reservation</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-hero">
+    <div class="hero-ornament" aria-hidden="true">✦</div>
+    <p class="section-label">Book a Table</p>
+    <h1 class="page-hero-title">Reservation</h1>
+    <p class="page-hero-subtitle">席のご予約</p>
+    <div class="hero-divider" aria-hidden="true"></div>
+    <p class="page-hero-desc" id="reservation-notes"></p>
+  </header>
+
+  <main class="reservation-main">
+    <div class="reservation-layout">
+      <section class="reservation-form-section" aria-labelledby="form-heading">
+        <h2 id="form-heading" class="visually-hidden">予約フォーム</h2>
+
+        <form id="reservation-form" class="reservation-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">お名前 <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="山田 太郎">
+            </div>
+            <div class="form-group">
+              <label for="phone">電話番号 <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="090-1234-5678">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">メールアドレス <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">ご来店日 <span class="required">*</span></label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">ご来店時間 <span class="required">*</span></label>
+              <select id="time" name="time" required>
+                <option value="">時間を選択</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="party">人数 <span class="required">*</span></label>
+              <select id="party" name="party" required>
+                <option value="">人数を選択</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="seat">席の種類 <span class="required">*</span></label>
+              <select id="seat" name="seat" required>
+                <option value="">席を選択</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="requests">ご要望・備考</label>
+            <textarea id="requests" name="requests" rows="3" placeholder="アレルギー、記念日のサプライズなど"></textarea>
+          </div>
+
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+
+          <button type="submit" class="form-submit">予約を送信する</button>
+        </form>
+      </section>
+
+      <aside class="reservation-info">
+        <div class="info-card">
+          <h3 class="info-card-title">Reservation Policy</h3>
+          <ul class="info-list" id="policy-list">
+            <li>ご予約は来店日の30日前から受け付けております</li>
+            <li>当日のご予約はお電話にてお問い合わせください</li>
+            <li>15分以上の遅刻はキャンセル扱いとなる場合があります</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">Seat Types</h3>
+          <div class="seat-types" id="seat-types-info">
+            <!-- JS で描画 -->
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card-title">Contact</h3>
+          <p class="info-contact">
+            お電話でのご予約・お問い合わせ<br>
+            <a href="#" id="reservation-phone" class="phone-link"></a>
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <section class="confirmation-panel" id="confirmation-panel" hidden aria-live="polite">
+      <div class="confirmation-card">
+        <div class="confirmation-icon" aria-hidden="true">✦</div>
+        <h2 class="confirmation-title">ご予約を受け付けました</h2>
+        <p class="confirmation-lead">以下の内容で予約リクエストを送信しました。<br>店舗からの確認連絡をお待ちください。</p>
+        <dl class="confirmation-details" id="confirmation-details"></dl>
+        <p class="confirmation-id">予約番号: <span id="confirmation-id"></span></p>
+        <div class="confirmation-actions">
+          <a href="index.html" class="hero-cta">トップへ戻る</a>
+          <button type="button" class="form-submit form-submit--secondary" id="new-reservation-btn">別の予約をする</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-logo">Vesper Cafe</p>
+    <p class="footer-copy">&copy; <span id="footer-year"></span> Vesper Cafe. All rights reserved.</p>
+    <p class="footer-note">※ 本サイトは Git/GitHub 勉強会用の架空カフェです。実在の店舗とは無関係です。</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/reservation.js"></script>
+</body>
+</html>
