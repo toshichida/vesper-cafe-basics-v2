@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Vesper Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="メインナビゲーション">
+    <a href="index.html" class="nav-logo">Vesper</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#menu">Menu</a></li>
+      <li><a href="index.html#access">Access</a></li>
+      <li><a href="blog.html" class="nav-active">Blog</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-hero">
+    <div class="hero-ornament" aria-hidden="true">✦</div>
+    <p class="section-label">Cafe Journal</p>
+    <h1 class="page-hero-title" id="blog-title">Vesper Journal</h1>
+    <p class="page-hero-subtitle" id="blog-subtitle">ヴェスパー・ジャーナル</p>
+    <div class="hero-divider" aria-hidden="true"></div>
+    <p class="page-hero-desc" id="blog-description"></p>
+  </header>
+
+  <main class="blog-main">
+    <section class="blog-list-view" id="blog-list-view">
+      <div class="blog-filters" role="tablist" aria-label="ブログカテゴリ" id="blog-filters">
+        <!-- JS で描画 -->
+      </div>
+      <div class="blog-grid" id="blog-grid" aria-live="polite">
+        <!-- JS で描画 -->
+      </div>
+    </section>
+
+    <section class="blog-article-view" id="blog-article-view" hidden aria-live="polite">
+      <button type="button" class="blog-back-btn" id="blog-back-btn">← Back to Journal</button>
+      <article class="blog-article" id="blog-article">
+        <!-- JS で描画 -->
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-logo">Vesper Cafe</p>
+    <p class="footer-copy">&copy; <span id="footer-year"></span> Vesper Cafe. All rights reserved.</p>
+    <p class="footer-note">※ 本サイトは Git/GitHub 勉強会用の架空カフェです。実在の店舗とは無関係です。</p>
+  </footer>
+
+  <script src="js/blog.js"></script>
+</body>
+</html>

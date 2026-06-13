@@ -1,0 +1,88 @@
+{
+  "blog": {
+    "title": "Vesper Journal",
+    "subtitle": "ヴェスパー・ジャーナル",
+    "description": "焙煎の裏話、季節のメニュー、店内の出来事。Vesper Cafe の日常を綴るブログです。"
+  },
+  "categories": [
+    { "id": "all", "label": "All" },
+    { "id": "coffee", "label": "Coffee" },
+    { "id": "story", "label": "Story" },
+    { "id": "event", "label": "Event" },
+    { "id": "recipe", "label": "Recipe" }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "slug": "vesper-blend-roasting",
+      "title": "Vesper Blend の焙煎秘話",
+      "titleEn": "The Story Behind Vesper Blend",
+      "date": "2026-05-18",
+      "category": "coffee",
+      "author": "店主 / Owner",
+      "readTime": 4,
+      "excerpt": "夕暮れの空をイメージしたブレンドは、3種類の豆を段階的にブレンドして生まれました。深煎りのチョコレート感と中煎りのフルーティーさのバランスが鍵です。",
+      "content": "Vesper Blend は、開店当初から変わらない看板ブレンドです。エチオピアの中煎り豆がフルーティーな酸味を、ブラジルの深煎り豆がチョコレートとキャラメルのコクを担います。\n\n焙煎は毎週火曜と金曜の早朝。豆の状態や湿度によって焙煎時間を15秒単位で調整しています。夕暮れ時に一杯飲んでいただきたい——その想いから、少し深めの仕上がりを目指しています。\n\n次回の焙煎日は Instagram でもお知らせします。ぜひ新鮮な一杯をお試しください。"
+    },
+    {
+      "id": 2,
+      "slug": "terrace-seat-opening",
+      "title": "夕暮れのテラス席ができるまで",
+      "titleEn": "Building Our Twilight Terrace",
+      "date": "2026-04-02",
+      "category": "story",
+      "author": "スタッフ / Staff",
+      "readTime": 5,
+      "excerpt": "店舗裏手の小さなスペースを、夕暮れ専用のテラス席に改装しました。古いレンガとウッドデッキで、アンティークな雰囲気を演出しています。",
+      "content": "ずっと夢に見ていたテラス席。表参道の喧騒から一歩離れた、夕暮れだけが特別な時間を刻む場所を作りたかったんです。\n\n古材市場で見つけたレンガと、地元の職人さんに依頼したウッドデッキ。照明は暖色のフェアリーライトで、日が沈むとカフェ全体が別の顔を見せます。\n\nテラス席は天候により利用できない日もありますが、晴れた夕方にはぜひお試しください。夕暮れブレンドとの相性は抜群です。"
+    },
+    {
+      "id": 3,
+      "slug": "seasonal-scone-may",
+      "title": "今月のスコーン：無花果とクルミ",
+      "titleEn": "This Month's Scone: Fig & Walnut",
+      "date": "2026-05-01",
+      "category": "recipe",
+      "author": "パティシエ / Pastry Chef",
+      "readTime": 3,
+      "excerpt": "5月の季節限定スコーンは、トルコ産の乾燥無花果とカリフォルニア産クルミを練り込んだ夕暮れ色の一品。自家製クロテッドクリームとの相性も抜群です。",
+      "content": "毎月変わる季節のスコーン。5月は無花果とクルミの組み合わせです。無花果のやさしい甘みと、クルミの食感が夕暮れの空気にぴったり合います。\n\n生地には発酵バターを使用し、180度で20分焼き上げ。外はサクッと、中はしっとり。クロテッドクリームは前日に仕込み、翌朝フレッシュな状態で提供しています。\n\nテイクアウトも可能です。数量限定なので、お早めにどうぞ。"
+    },
+    {
+      "id": 4,
+      "slug": "record-night-report",
+      "title": "レコードナイト開催レポート",
+      "titleEn": "Record Night Event Report",
+      "date": "2026-03-22",
+      "category": "event",
+      "author": "スタッフ / Staff",
+      "readTime": 4,
+      "excerpt": "毎月第3金曜に開催している「Vesper Record Night」。今月はジャズとボサノバの夜。お客様とのセレクト合戦が盛り上がりました。",
+      "content": "Vesper Record Night は、お客様が持ち寄ったレコードをかけ合うイベントです。今月のテーマは「夕暮れに聴きたいジャズとボサノバ」。\n\n開店と同時に席が埋まり、ミルズ・デイビスの「Kind of Blue」とボサノバクラシックが店内に響きました。コーヒーと音楽のペアリング、次回はどんなセレクトになるか楽しみです。\n\n次回は4月18日（金）19:00〜。参加費はドリンク代のみ。お気軽にお越しください。"
+    },
+    {
+      "id": 5,
+      "slug": "honey-latte-journey",
+      "title": "はちみつの産地を訪ねて",
+      "titleEn": "Visiting Our Honey Source",
+      "date": "2026-02-14",
+      "category": "coffee",
+      "author": "店主 / Owner",
+      "readTime": 6,
+      "excerpt": "ハニーラテに使う国産はちみつの産地、長野県の養蜂場を訪問しました。花の種類によって変わる風味が、ラテの個性を支えています。",
+      "content": "ハニーラテは Vesper Cafe で2番目に人気のドリンク。使っているはちみつは長野県諏訪地方の養蜂場から直接仕入れています。\n\n今回は養蜂家の田中さんを訪ね、春のはちみつ（アカシアとレンゲ）の搾りたてを試食。フローラルで繊細な甘さが、エスプレッソの苦味をやさしく包みます。\n\n来シーズンは新しい花蜜ブレンドも試作予定。ハニーラテがさらに進化するかもしれません。"
+    },
+    {
+      "id": 6,
+      "slug": "sixth-anniversary",
+      "title": "6周年を迎えて",
+      "titleEn": "Celebrating Our 6th Anniversary",
+      "date": "2026-01-10",
+      "category": "story",
+      "author": "店主 / Owner",
+      "readTime": 5,
+      "excerpt": "2026年1月、Vesper Cafe は6周年を迎えました。支えてくださったすべてのお客様へ、感謝の気持ちを込めて。",
+      "content": "2018年の寒い1月、小さなカウンター6席だけのカフェから始まりました。6年の間に、たくさんの出会いと学びがありました。\n\n6周年記念として、1月限定のスペシャルブレンド「Anniversary Roast」をご用意しました。開店当初のレシピをベースに、今の私たちの技術を加えた一杯です。\n\nこれからも、夕暮れの一杯を大切にしていきます。いつもありがとうございます。"
+    }
+  ]
+}
