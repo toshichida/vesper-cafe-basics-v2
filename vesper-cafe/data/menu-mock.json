@@ -1,0 +1,7 @@
+{
+  "menu": [
+    { "id": 1, "name": "Vesper Blend", "price": 580, "category": "coffee" },
+    { "id": 2, "name": "Honey Latte", "price": 650, "category": "coffee" },
+    { "id": 3, "name": "Twilight Scone", "price": 420, "category": "food" }
+  ]
+}
