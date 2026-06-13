@@ -3,17 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vesper Cafe</title>
+  <title>Vesper Cafe — 夕暮れのスペシャルティコーヒー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Vesper Cafe</h1>
-    <p class="tagline">夕暮れのスペシャルティコーヒー</p>
+  <nav class="site-nav" aria-label="メインナビゲーション">
+    <a href="#" class="nav-logo">Vesper</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#access">Access</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-ornament" aria-hidden="true">✦</div>
+    <p class="hero-est">Est. <span id="shop-established">—</span></p>
+    <h1 class="hero-title" id="shop-name">Vesper Cafe</h1>
+    <p class="hero-name-ja" id="shop-name-ja"></p>
+    <p class="hero-tagline" id="shop-tagline">夕暮れのスペシャルティコーヒー</p>
+    <div class="hero-divider" aria-hidden="true"></div>
+    <a href="#menu" class="hero-cta">View Menu</a>
   </header>
+
   <main>
-    <p class="placeholder">メニュー表示は準備中です。</p>
+    <section id="about" class="section about">
+      <div class="section-header">
+        <span class="section-label">Our Story</span>
+        <h2>About</h2>
+      </div>
+      <p class="about-text" id="shop-description"></p>
+    </section>
+
+    <section id="menu" class="section menu">
+      <div class="section-header">
+        <span class="section-label">Today's Selection</span>
+        <h2>Menu</h2>
+      </div>
+      <div class="menu-filters" role="tablist" aria-label="メニューカテゴリ">
+        <button class="filter-btn active" data-category="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-category="coffee" role="tab" aria-selected="false">Coffee</button>
+        <button class="filter-btn" data-category="tea" role="tab" aria-selected="false">Tea</button>
+        <button class="filter-btn" data-category="food" role="tab" aria-selected="false">Food</button>
+      </div>
+      <div class="menu-grid" id="menu-grid" aria-live="polite">
+        <!-- JS で描画 -->
+      </div>
+    </section>
+
+    <section id="access" class="section access">
+      <div class="section-header">
+        <span class="section-label">Visit Us</span>
+        <h2>Access</h2>
+      </div>
+      <div class="access-grid">
+        <div class="access-info">
+          <dl class="access-list">
+            <div class="access-item">
+              <dt>Address</dt>
+              <dd id="location-address"></dd>
+            </div>
+            <div class="access-item">
+              <dt>Access</dt>
+              <dd id="location-access"></dd>
+            </div>
+            <div class="access-item">
+              <dt>Hours</dt>
+              <dd>
+                <span id="location-hours-weekday"></span><br>
+                <span id="location-hours-weekend"></span>
+              </dd>
+            </div>
+            <div class="access-item">
+              <dt>Closed</dt>
+              <dd id="location-closed"></dd>
+            </div>
+            <div class="access-item">
+              <dt>Tel</dt>
+              <dd><a href="#" id="location-phone" class="phone-link"></a></dd>
+            </div>
+          </dl>
+        </div>
+        <div class="access-map" aria-label="地図（モック）">
+          <div class="map-placeholder">
+            <span class="map-pin" aria-hidden="true">📍</span>
+            <p class="map-label">表参道エリア</p>
+            <p class="map-coords" id="location-coords"></p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p class="footer-logo">Vesper Cafe</p>
+    <p class="footer-copy">&copy; <span id="footer-year"></span> Vesper Cafe. All rights reserved.</p>
+    <p class="footer-note">※ 本サイトは Git/GitHub 勉強会用の架空カフェです。実在の店舗とは無関係です。</p>
+  </footer>
+
   <script src="js/storage.js"></script>
   <script src="js/app.js"></script>
 </body>

@@ -1,7 +1,79 @@
 {
+  "shop": {
+    "name": "Vesper Cafe",
+    "nameJa": "ヴェスパー・カフェ",
+    "tagline": "夕暮れのスペシャルティコーヒー",
+    "description": "1920年代のパリの書店を思わせる、木の温もりと古いレコードの音が漂う隠れ家カフェ。夕暮れ時にだけ提供されるブレンドと、自家製の焼き菓子をお楽しみください。",
+    "established": "2018"
+  },
+  "location": {
+    "address": "〒150-0001 東京都渋谷区神宮前 3-14-7 Vesper Building 1F",
+    "access": "東京メトロ 表参道駅 A2出口より徒歩5分",
+    "hours": {
+      "weekday": "平日 10:00 – 20:00",
+      "weekend": "土日祝 09:00 – 21:00"
+    },
+    "closed": "毎週火曜日（祝日の場合は翌日）",
+    "phone": "03-6450-8821",
+    "coordinates": {
+      "lat": 35.6657,
+      "lng": 139.7088
+    }
+  },
   "menu": [
-    { "id": 1, "name": "Vesper Blend", "price": 580, "category": "coffee" },
-    { "id": 2, "name": "Honey Latte", "price": 650, "category": "coffee" },
-    { "id": 3, "name": "Twilight Scone", "price": 420, "category": "food" }
+    {
+      "id": 1,
+      "name": "Vesper Blend",
+      "nameJa": "ヴェスパー・ブレンド",
+      "price": 580,
+      "category": "coffee",
+      "description": "夕暮れの空をイメージした、深煎りと中煎りのハーモニー。チョコとキャラメルの余韻。",
+      "badge": "signature"
+    },
+    {
+      "id": 2,
+      "name": "Honey Latte",
+      "nameJa": "ハニー・ラテ",
+      "price": 650,
+      "category": "coffee",
+      "description": "国産はちみつとスチームミルク。やさしい甘さが広がる定番の一杯。",
+      "badge": null
+    },
+    {
+      "id": 3,
+      "name": "Twilight Scone",
+      "nameJa": "トワイライト・スコーン",
+      "price": 420,
+      "category": "food",
+      "description": "無花果とクルミを練り込んだ、夕暮れ色のスコーン。自家製クロテッドクリーム添え。",
+      "badge": "seasonal"
+    },
+    {
+      "id": 4,
+      "name": "Amber Cold Brew",
+      "nameJa": "アンバー・コールドブリュー",
+      "price": 620,
+      "category": "coffee",
+      "description": "12時間かけて抽出したスムースなコールドブリュー。琥珀色の透明感。",
+      "badge": null
+    },
+    {
+      "id": 5,
+      "name": "Velvet Chai",
+      "nameJa": "ベルベット・チャイ",
+      "price": 590,
+      "category": "tea",
+      "description": "セイロンシナモンとカルダモンをブレンドした、スパイシーなミルクチャイ。",
+      "badge": null
+    },
+    {
+      "id": 6,
+      "name": "Evening Tart",
+      "nameJa": "イブニング・タルト",
+      "price": 480,
+      "category": "food",
+      "description": "ブルーベリーとレモンカードのタルト。夕暮れ時のデザートにぴったり。",
+      "badge": "seasonal"
+    }
   ]
 }
